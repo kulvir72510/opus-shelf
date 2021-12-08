@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../stylesheets/Login.css";
 import opusshelf from "../opusshelf.png";
@@ -27,6 +27,7 @@ function Login() {
     const data = await res.json();
     // console.log(data);
     if (res.status === 400 || !data) {
+      setLoading(false);
       window.alert("invalid data");
     } else {
       setLoading(false);
@@ -45,13 +46,13 @@ function Login() {
   //     navigate("/home");
   //   };
 
-  if (isLoading) {
-    return (
-      <div>
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div>
+  //       <h1>Loading...</h1>
+  //     </div>
+  //   );
+  // }
   return (
     <div className="login-page">
       {/* {(email.length > 0 || password.length > 0) && (
@@ -91,7 +92,7 @@ function Login() {
 
             <button
               type="submit"
-              className="btn"
+              className="btn0"
               id="signin"
               value="Log In"
               onClick={loginUser}

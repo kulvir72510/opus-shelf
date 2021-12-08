@@ -1,104 +1,103 @@
 login-page {
-    color: white;
-    margin: 0%;
-    padding: 0%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .column {
-    float: left;
-    width: 50%;
-  }
-  
-  .leftImg {
-    opacity: 1;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .center {
-    display: block;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-  .form-group input {
-    text-align: center;
-    display: block;
-    width: 50%;
-    padding: 1%;
-    border: 1% solid black;
-    margin: 5% auto;
-    border-radius: 19em;
-  }
-  .btn {
-    cursor: pointer;
-    text-align: center;
-    display: block;
-    width: 13%;
-    padding: 1%;
-    border: 1% solid black;
-    margin: 4% auto;
-    border-radius: 19em;
-  }
-  .forgotpass {
-    text-align: center;
-    text-decoration: none;
-  
-    width: 50%;
-    padding: 1%;
-  
-    margin: 1% auto;
-    cursor: pointer;
-  }
-  .forgotpass:hover {
-    text-decoration: underline;
-    color: greenyellow;
-  }
-  .gbtn {
-    color: white;
-    background-color: #db4437;
-    text-align: center;
-    display: inline-block;
-    width: 183%;
-    padding: 7%;
-    border: 1% solid black;
-    margin: 6% auto;
-    border-radius: 19em;
-    cursor: pointer;
-  }
-  .fbtn {
-    color: white;
-    background-color: #3b5998;
-    text-align: center;
-    display: inline-block;
-    width: 183%;
-    padding: 7%;
-    border: 1% solid black;
-    margin: 6% auto;
-    border-radius: 19em;
-    cursor: pointer;
-  }
-  .regis {
-    text-align: center;
-    text-decoration: none;
-  
-    width: 50%;
-    padding: 1%;
-  
-    margin: 1% auto;
-    cursor: pointer;
-  }
-  
-  .buttondiv {
-    display: inline-block;
-  
-    margin-left: 37%;
-  }
-  
+  color: white;
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+.leftImg {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 50%;
+  padding: 1%;
+  border: 1% solid black;
+  margin: 5% auto;
+  border-radius: 19em;
+}
+.btn0 {
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 13%;
+  padding: 1%;
+  border: 1% solid black;
+  margin: 4% auto;
+  border-radius: 19em;
+}
+.forgotpass {
+  text-align: center;
+  text-decoration: none;
+
+  width: 50%;
+  padding: 1%;
+
+  margin: 1% auto;
+  cursor: pointer;
+}
+.forgotpass:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+.gbtn {
+  color: white;
+  background-color: #db4437;
+  text-align: center;
+  display: inline-block;
+  width: 183%;
+  padding: 7%;
+  border: 1% solid black;
+  margin: 6% auto;
+  border-radius: 19em;
+  cursor: pointer;
+}
+.fbtn {
+  color: white;
+  background-color: #3b5998;
+  text-align: center;
+  display: inline-block;
+  width: 183%;
+  padding: 7%;
+  border: 1% solid black;
+  margin: 6% auto;
+  border-radius: 19em;
+  cursor: pointer;
+}
+.regis {
+  text-align: center;
+  text-decoration: none;
+
+  width: 50%;
+  padding: 1%;
+
+  margin: 1% auto;
+  cursor: pointer;
+}
+
+.buttondiv {
+  display: inline-block;
+
+  margin-left: 37%;
+}

@@ -8,7 +8,7 @@ import Register from "./Components/Register";
 import Home from "./pages/home";
 import PublicClass from "./pages/PublicClass";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Routes>
@@ -21,6 +21,6 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
