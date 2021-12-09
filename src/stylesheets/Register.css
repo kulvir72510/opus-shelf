@@ -1,0 +1,54 @@
+.form-input input{
+    border:0.1em double whitesmoke;
+    width: 90%;
+    border-radius: 0.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    padding:  0px 10px 10px 10;
+    box-shadow: 0.05em 0.06em 0.04em 0.05em rgb(207, 199, 238) ;
+    outline: none;
+    align-items: center;
+}
+.form-input button{
+    display: block;
+    width:50%;
+    border:0.1em double whitesmoke;
+    height: 2.2em;
+    
+    border-radius:1em ;
+    box-shadow: 0.05em 0.06em 0.04em 0.05em grey ;
+    outline: none;
+    margin: auto;
+    
+}
+
+.form-input button:hover{
+    border-color:wheat;
+}
+
+.register-img{
+    margin-left: -5%;
+    width: 60%;
+    height: 22%;
+} 
+
+ .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out ;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+    backface-visibility:visible;
+}
+
+/* .ReactModal__Overlay--before-close{
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+    
+} */
+
+.logbtn{
+    margin-top: 0.5em;
+    text-decoration: none;
+}

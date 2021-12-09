@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Register from './Register';
 import "../stylesheets/Login.css";
 import opusshelf from "../opusshelf.png";
 import opss from "../opss.png";
@@ -9,6 +10,8 @@ function Login() {
   const [isLoading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPasssword] = useState("");
+  const [isShown, setIsShown] = useState(false);
+
 
   const loginUser = async (e) => {
     e.preventDefault();
@@ -54,67 +57,66 @@ function Login() {
   //   );
   // }
   return (
-    <div className="login-page">
-      {/* {(email.length > 0 || password.length > 0) && (
-        <>
-          <p>UserName is : {email}</p>
-          <p>Password is : {password}</p>
-        </>
-      )} */}
-      <div className="row">
-        <div className="column">
-          <img src={opusshelf} alt="" width="100%" class="leftImg" />
-        </div>
-        <div className="column">
-          <div className="center">
-            <img src={opss} alt="" width="100%" />
+    <>{isShown && (
+      <Register setIsShown={setIsShown} />)}
+      <div className="login-page">
+        <div className="row">
+          <div className="column">
+            <img src={opusshelf} alt="" width="100%" class="leftImg" />
           </div>
-
-          <form method="POST">
-            <div className="form-group">
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
-              />
-            </div>
-            <div className="form-group">
-              <input
-                id="password"
-                type="password"
-                value={password}
-                onChange={(e) => setPasssword(e.target.value)}
-                placeholder="Password"
-              />
+          <div className="column">
+            <div className="center">
+              <img src={opss} alt="" width="100%" />
             </div>
 
-            <button
-              type="submit"
-              className="btn0"
-              id="signin"
-              value="Log In"
-              onClick={loginUser}
-            >
-              Log In
-            </button>
-          </form>
-          <div className="forgotpass">
-            <a href="#">Forgot Password ?</a>
-          </div>
+            <form method="POST">
+              <div className="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPasssword(e.target.value)}
+                  placeholder="Password"
+                  required
+                />
+              </div>
+                <button
+                  type="submit"
+                  className="btn0"
+                  id="signin"
+                  value="Log In"
+                  onClick={loginUser}
+                >
+                  Log In
+                </button>
 
-          <div className="buttondiv">
-            <button className="gbtn">Google</button>
-            <button className="fbtn">Facebook</button>
+            </form>
+            <div className="forgotpass">
+              <a href="#">Forgot Password ?</a>
+            </div>
+
+            <div className="buttondiv">
+              <button className="gbtn">Google</button>
+              <button className="fbtn">Facebook</button>
+            </div>
+            <button className="reg-btn"
+                  onClick={() => setIsShown(true)}>
+                  Sign Up
+                </button>
           </div>
-          <div className="regis">
-            <Link to="/register">Register Here</Link>
-          </div>
-          <Link to="/home">Go to home</Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

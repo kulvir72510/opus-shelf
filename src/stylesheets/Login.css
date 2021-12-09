@@ -37,24 +37,27 @@ login-page {
   margin: 5% auto;
   border-radius: 19em;
 }
+
 .btn0 {
   cursor: pointer;
   text-align: center;
   display: block;
-  width: 13%;
+  width: 15%;
+  height: 10%;
   padding: 1%;
-  border: 1% solid black;
-  margin: 4% auto;
-  border-radius: 19em;
+  margin:auto;
+  color: black;
+  background: #179407;
+  border-radius: 2em;
 }
 .forgotpass {
   text-align: center;
   text-decoration: none;
-
+  display: block;
   width: 50%;
   padding: 1%;
-
-  margin: 1% auto;
+  text-align: center   ;
+  margin: auto;
   cursor: pointer;
 }
 .forgotpass:hover {
@@ -68,9 +71,8 @@ login-page {
   display: inline-block;
   width: 183%;
   padding: 7%;
-  border: 1% solid black;
   margin: 6% auto;
-  border-radius: 19em;
+  border-radius: 2em;
   cursor: pointer;
 }
 .fbtn {
@@ -80,24 +82,25 @@ login-page {
   display: inline-block;
   width: 183%;
   padding: 7%;
-  border: 1% solid black;
-  margin: 6% auto;
-  border-radius: 19em;
+  margin:6% auto;
+  border-radius: 2em;
   cursor: pointer;
 }
-.regis {
-  text-align: center;
-  text-decoration: none;
 
-  width: 50%;
-  padding: 1%;
-
-  margin: 1% auto;
-  cursor: pointer;
-}
 
 .buttondiv {
   display: inline-block;
-
   margin-left: 37%;
+}
+
+.reg-btn {
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 15%;
+  height:7%;
+  padding: 1%;
+  background: rgb(173, 173, 173);
+  margin:auto;
+  border-radius: 2em;
 }
