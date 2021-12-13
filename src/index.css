@@ -8,3 +8,10 @@
 .links:active {
   color: #000;
 }
+.profile-image {
+  height: 8rem;
+  width: 10rem;
+  border-radius: 100%;
+  position: absolute;
+  right: 5rem;
+}

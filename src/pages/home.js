@@ -16,7 +16,7 @@ const Home = () => {
             quasi?
           </div>
         </div>
-        <Design></Design>
+        <Design />
       </div>
       <Footer />
     </div>

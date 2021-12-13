@@ -5,6 +5,10 @@ import Login from "./Components/Login";
 import Register from "./Components/Register";
 import Home from "./pages/home";
 import PublicClass from "./pages/PublicClass";
+import YourClass from "./pages/YourClass";
+import Branch from "./Components/Branch";
+import SubjectCSE from "./Components/SubjectCSE";
+import SubjectIT from "./Components/SubjectIT";
 
 const App = () => {
   return (
@@ -14,6 +18,10 @@ const App = () => {
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/register" element={<Register />} />
         <Route path="/publicclass" element={<PublicClass />} />
+        <Route path="/yourclass" element={<YourClass />} />
+        <Route path="/branch" element={<Branch />} />
+        <Route path="/subjectCSE" element={<SubjectCSE />} />
+        <Route path="/subjectIT" element={<SubjectIT />} />
         <Route path="/home" element={<Home />} />
       </Routes>
     </div>

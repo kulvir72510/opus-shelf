@@ -13,7 +13,7 @@ const Design = () => {
           Public Class
         </Link>
         <br />
-        <Link className=" links" to="#">
+        <Link className=" links" to="/yourclass">
           Your Class
         </Link>
         <br />
