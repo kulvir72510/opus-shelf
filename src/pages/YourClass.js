@@ -7,9 +7,6 @@ import Design from "../Components/Design";
 const YourClass = () => {
   return (
     <div>
-      <div style={{ height: "100vh" }}>
-        <Header />
-        <div class="wraper">
           <div class="div-1">
             <h2>Your Classes</h2>
             <div className="hrTag">
@@ -32,11 +29,7 @@ const YourClass = () => {
               <Square year="4" />
             </div>
           </div>
-          <Design current2="true" />
         </div>
-        <Footer />
-      </div>
-    </div>
   );
 };
 

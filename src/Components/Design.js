@@ -1,7 +1,7 @@
-import React from "react";
-import { Route, Link } from "react-router-dom";
+import React,{useEffect,memo} from "react";
+import { Link } from "react-router-dom";
 
-const Design = () => {
+const Design = () => { 
   return (
     <div className="div-2">
       <div className="content1">
@@ -17,7 +17,7 @@ const Design = () => {
           Your Class
         </Link>
         <br />
-        <Link className=" links" to="#">
+        <Link className=" links" to="/newclass">
           Make New Class
         </Link>
         <br />
@@ -29,4 +29,4 @@ const Design = () => {
   );
 };
 
-export default Design;
+export default memo(Design);

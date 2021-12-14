@@ -5,16 +5,19 @@ import img from "../images/opss.png";
 const Square = (props) => {
   return (
     <div className="square">
+      <div className="box11">
       <img
-        src={img}
+        src={props.imageLink}
         alt=""
+        // className="allBox-imag"
         style={{
-          width: "10vw",
-          height: "15vh",
+          width: "100%",
+          height: "100%",
           border: "2px solid black",
           cursor: "pointer",
         }}
       />
+      </div>
       <Link className="linking" to="/branch">
         {props.year1}
       </Link>

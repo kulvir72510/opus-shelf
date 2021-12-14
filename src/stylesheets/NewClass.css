@@ -1,0 +1,45 @@
+.new-class{
+    background-color:white;
+   padding: 3%;
+   margin-right: 10%;
+}
+input,textarea{
+    width: 48%;
+    margin-left:2%;
+    border:none;
+    padding:0.2em;
+    border-radius: 0.2em;
+    font-size: 0.9em;
+
+}
+input:focus,textarea:focus{
+    outline: none;
+}
+label{
+    width:30%px;
+    display: inline-block;
+    text-align: end;
+}
+textarea{
+    vertical-align: top;
+    height: 12vh;
+    line-break: normal;
+    
+}
+button{
+    width: 22%;
+    border: whitesmoke;
+    border-radius:1em ;
+    background: white;
+    cursor: pointer;
+}
+button:hover{
+    background:whitesmoke;
+}
+button:active{
+    background:rgb(219, 217, 247);
+
+}
+input,textarea,button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

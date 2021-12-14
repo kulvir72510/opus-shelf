@@ -3,6 +3,8 @@ import Header from "./header";
 import Footer from "./Footer";
 import Design from "./Design";
 import Square from "./Square";
+import { Link } from "react-router-dom";
+
 
 const SubjectCSE = (props) => {
   return (
@@ -13,6 +15,7 @@ const SubjectCSE = (props) => {
           <h2>Subjects</h2>
           <hr></hr>
           <div className="flex-container2">
+
             <Square SubjectCS="DAA" />
             <Square SubjectCS="DSA" />
             <Square SubjectCS="CD" />
